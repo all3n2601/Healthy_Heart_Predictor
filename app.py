@@ -14,7 +14,7 @@ with st.sidebar:
                           icons=['heart'],
                           default_index=0)
     
-    st.subheader("Note ")
+    st.subheader("Note :")
     st.caption("0 = FALSE")
     st.caption("1 = TRUE")
     
