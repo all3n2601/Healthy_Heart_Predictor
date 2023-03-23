@@ -29,7 +29,7 @@ if (selected == 'Healthy Heart Prediction'):
         age = st.number_input('Age')
         
     with col2:
-        sex = st.selectbox("Sex",[0,1])
+        sex = st.selectbox("Sex : 0=female; 1=male",[0,1])
         
     with col3:
         cp = st.number_input('Chest Pain types')
@@ -62,7 +62,7 @@ if (selected == 'Healthy Heart Prediction'):
         ca = st.number_input('Major vessels colored by flourosopy')
         
     with col1:
-        thal = st.number_input('thal: 0 = normal; 1 = fixed defect; 2 = reversable defect')
+        thal = st.selectbox("thal: 0 = normal; 1 = fixed defect; 2 = reversable defect",[0,1,2])
     
     
      
