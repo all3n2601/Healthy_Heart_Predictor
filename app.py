@@ -29,7 +29,7 @@ if (selected == 'Healthy Heart Prediction'):
         age = st.number_input('Age')
         
     with col2:
-        sex = st.number_input('Sex')
+        sex = st.selectbox("Sex",[0,1])
         
     with col3:
         cp = st.number_input('Chest Pain types')
