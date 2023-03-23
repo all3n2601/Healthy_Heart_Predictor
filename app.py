@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-heart_disease_model = pickle.load(open('healthy_heart_model.sav','rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
 
 
 
@@ -64,11 +64,8 @@ if (selected == 'Healthy Heart Prediction'):
         thal = st.selectbox("thal: 0 = normal; 1 = fixed defect; 2 = reversable defect",[0,1,2])
     
     
-     
-    # code for Prediction
+    
     heart_diagnosis = ''
-
-    # creating a button for Prediction
     
     if st.button('Healthy Heart Test Result'):
         heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                         
