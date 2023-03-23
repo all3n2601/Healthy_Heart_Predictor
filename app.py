@@ -22,7 +22,7 @@ if (selected == 'Healthy Heart Prediction'):
   
     st.title('Healthy Heart Prediction using ML')
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
     
     with col1:
         age = st.slider("Age",10,100)
@@ -30,16 +30,16 @@ if (selected == 'Healthy Heart Prediction'):
     with col2:
         sex = st.selectbox("Sex : 0=female; 1=male",[0,1])
         
-    with col3:
+    with col1:
         cp = st.selectbox('Chest Pain types 1=typical angina, 2=atypical angina, 3=non-angina, 4=asymptomatic angina',[1,2,3,4])
         
-    with col1:
+    with col2:
         trestbps = st.slider('Resting Blood Pressure',94,200)
         
-    with col2:
+    with col1:
         chol = st.number_input('Serum Cholestoral in mg/dl')
         
-    with col3:
+    with col2:
         fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl",[0,1])
         
     with col1:
@@ -48,16 +48,16 @@ if (selected == 'Healthy Heart Prediction'):
     with col2:
         thalach = st.number_input('Maximum Heart Rate achieved')
         
-    with col3:
+    with col1:
         exang = st.selectbox("Exercise Induced Angina",[0,1])
         
-    with col1:
+    with col2:
         oldpeak = st.number_input('ST depression induced by exercise')
         
-    with col2:
+    with col1:
         slope = st.number_input('Slope of the peak exercise ST segment')
         
-    with col3:
+    with col2:
         ca = st.number_input('Major vessels colored by flouroscopy')
         
     with col1:
