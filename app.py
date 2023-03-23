@@ -17,6 +17,8 @@ with st.sidebar:
     st.subheader("Note :")
     st.caption("0 = FALSE")
     st.caption("1 = TRUE")
+    st.caption("Name : M A ALLEN FEBI")
+    st.caption("Reg No : 21BCE7470")
     
 
 
