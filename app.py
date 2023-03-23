@@ -28,13 +28,14 @@ if (selected == 'Healthy Heart Prediction'):
         age = st.slider("Age",10,100)
         
     with col2:
+        trestbps = st.slider('Resting Blood Pressure',94,200)    
+        
+    with col2:
         sex = st.selectbox("Sex : 0=female; 1=male",[0,1])
         
     with col1:
         cp = st.selectbox('Chest Pain types 1=typical angina, 2=atypical angina, 3=non-angina, 4=asymptomatic angina',[1,2,3,4])
         
-    with col2:
-        trestbps = st.slider('Resting Blood Pressure',94,200)
         
     with col1:
         chol = st.number_input('Serum Cholestoral in mg/dl')
