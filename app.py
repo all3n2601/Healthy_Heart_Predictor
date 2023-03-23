@@ -25,7 +25,7 @@ if (selected == 'Healthy Heart Prediction'):
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        age = st.number_input('Age')
+        age = st.slider("Age",10,100)
         
     with col2:
         sex = st.selectbox("Sex : 0=female; 1=male",[0,1])
