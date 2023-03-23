@@ -2,11 +2,10 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 
-heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('healthy_heart_model.sav','rb'))
 
 
 
-# sidebar for navigation
 with st.sidebar:
     
     selected = option_menu('Healthy Heart Prediction System',
@@ -20,7 +19,7 @@ with st.sidebar:
 # Heart Disease Prediction Page
 if (selected == 'Healthy Heart Prediction'):
     
-    # page title
+  
     st.title('Healthy Heart Prediction using ML')
     
     col1, col2, col3 = st.columns(3)
@@ -44,13 +43,13 @@ if (selected == 'Healthy Heart Prediction'):
         fbs = st.number_input('Fasting Blood Sugar > 120 mg/dl')
         
     with col1:
-        restecg = st.number_input('Resting Electrocardiographic results')
+        restecg = st.selectbox("Resting Electrocardiographic results",[0,1])
         
     with col2:
         thalach = st.number_input('Maximum Heart Rate achieved')
         
     with col3:
-        exang = st.number_input('Exercise Induced Angina')
+        exang = st.selectnox("Exercise Induced Angina",[0,1])
         
     with col1:
         oldpeak = st.number_input('ST depression induced by exercise')
