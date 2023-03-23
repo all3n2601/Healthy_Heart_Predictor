@@ -34,7 +34,7 @@ if (selected == 'Healthy Heart Prediction'):
         cp = st.number_input('Chest Pain types')
         
     with col1:
-        trestbps = st.number_input('Resting Blood Pressure')
+        trestbps = st.slider('Resting Blood Pressure',94,200)
         
     with col2:
         chol = st.number_input('Serum Cholestoral in mg/dl')
