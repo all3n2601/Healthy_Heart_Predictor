@@ -49,7 +49,7 @@ if (selected == 'Healthy Heart Prediction'):
         thalach = st.number_input('Maximum Heart Rate achieved')
         
     with col3:
-        exang = st.selectnox("Exercise Induced Angina",[0,1])
+        exang = st.selectbox("Exercise Induced Angina",[0,1])
         
     with col1:
         oldpeak = st.number_input('ST depression induced by exercise')
