@@ -40,7 +40,7 @@ if (selected == 'Healthy Heart Prediction'):
         chol = st.number_input('Serum Cholestoral in mg/dl')
         
     with col3:
-        fbs = st.number_input('Fasting Blood Sugar > 120 mg/dl')
+        fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl",[0,1])
         
     with col1:
         restecg = st.selectbox("Resting Electrocardiographic results",[0,1])
