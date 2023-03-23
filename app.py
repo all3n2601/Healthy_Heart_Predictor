@@ -13,8 +13,10 @@ with st.sidebar:
                           ['Healthy Heart Prediction'],
                           icons=['heart'],
                           default_index=0)
-    st.subheader("0 = FALSE")
-    st.subheader("1 = TRUE")
+    
+    st.subheader("Note ")
+    st.caption("0 = FALSE")
+    st.caption("1 = TRUE")
     
 
 
