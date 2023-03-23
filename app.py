@@ -58,7 +58,7 @@ if (selected == 'Healthy Heart Prediction'):
         slope = st.number_input('Slope of the peak exercise ST segment')
         
     with col3:
-        ca = st.number_input('Major vessels colored by flourosopy')
+        ca = st.number_input('Major vessels colored by flouroscopy')
         
     with col1:
         thal = st.selectbox("thal: 0 = normal; 1 = fixed defect; 2 = reversable defect",[0,1,2])
