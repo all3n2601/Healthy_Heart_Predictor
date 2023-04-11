@@ -86,8 +86,9 @@ if (selected == 'Healthy Heart Prediction'):
         
         ------------------------------------------------------------------------------------------------------
         
-        BreakFast |  1cup mixed\n veg poha |  2multigrain\n bread  |  
-        
+        BreakFast |  1cup mixed   |  2multigrain  |
+                  |   veg poha    |  bread        | 
+                                  
         ------------------------------------------------------------------------------------------------------
         
         Lunch     |
