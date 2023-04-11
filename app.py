@@ -91,7 +91,13 @@ if (selected == 'Healthy Heart Prediction'):
           st.table(heart_diet)
         else:
           heart_diagnosis = 'The person is Healthy 🫀 🥳'
-        
+          healthy_diet = pd.DataFrame({
+                        'Meal': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+                        'Breakfast': ['2 eggs, whole wheat toast, avocado, and a cup of coffee', 'Greek yogurt with berries and granola', 'Oatmeal with fruit and nuts', 'Whole grain toast with avocado and tomato', 'Scrambled tofu with veggies and whole grain toast', 'Vegetable omelette with whole grain toast', 'Green smoothie with spinach, banana, and almond milk'],
+                        'Lunch': ['Mixed greens salad with grilled chicken or tofu, vinaigrette dressing', 'Brown rice and mixed veggies stir-fry with tofu or shrimp', 'Quinoa salad with mixed veggies and chickpeas', 'Lentil soup with whole grain roll', 'Grilled veggie burger with baby carrots', 'Grilled portobello mushroom with mixed veggies and sweet potato', 'Chickpea wrap with hummus and veggies'],
+                        'Dinner': ['Grilled salmon or tofu with mixed veggies and quinoa', 'Baked chicken or tofu with sweet potato and mixed greens', 'Vegetable curry with brown rice', 'Turkey chili with mixed greens salad', 'Grilled shrimp skewers with mixed veggies and quinoa', 'Grilled eggplant parmesan with mixed greens salad', 'Black bean burger with mixed greens salad'],
+                        })
+          st.table(healthy_diet)
     st.success(heart_diagnosis)
         
     
