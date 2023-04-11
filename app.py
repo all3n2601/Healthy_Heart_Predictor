@@ -82,7 +82,7 @@ if (selected == 'Healthy Heart Prediction'):
           st.write(
                               
      '''-----------------------------------------------------------------------------------------------------
-                        Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |
+            .       Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |
         
         ------------------------------------------------------------------------------------------------------
         
