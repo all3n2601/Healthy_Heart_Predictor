@@ -79,9 +79,11 @@ if (selected == 'Healthy Heart Prediction'):
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = "The person is not Healthy 🫀 and Has a Heart Disease \n"
+          st.write(
                              "-----------------------------------------------------------------------------------------------------\n"
                              "               Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |\n"
                              "        ------------------------------------------------------------------------------------------------------"
+          )
         else:
           heart_diagnosis = 'The person is Healthy 🫀 🥳'
         
