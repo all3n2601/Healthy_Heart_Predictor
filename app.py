@@ -88,9 +88,7 @@ if (selected == 'Healthy Heart Prediction'):
                       'Thursday': ['Whole grain toast with avocado and smoked salmon, 1 cup of tea', '1 orange, 10 almonds', 'Grilled chicken breast sandwich on whole grain bread, baby carrots', '1 cup of green tea, 1 string cheese', 'Grilled pork tenderloin, roasted potatoes, mixed veggies'],
                       'Friday': ['Egg white scramble with veggies and whole grain toast, 1 cup of coffee', '1 apple, 1 hard-boiled egg', 'Grilled chicken kebab, tabbouleh salad', '1 cup of green tea, 1 protein bar', 'Grilled fish tacos with salsa and avocado, mixed veggies'],
                       })
-
-                      # Display the table in Streamlit
-           st.table(heart_diet)
+          st.table(heart_diet)
         else:
           heart_diagnosis = 'The person is Healthy 🫀 🥳'
         
