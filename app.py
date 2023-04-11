@@ -1,5 +1,6 @@
 import pickle
 import streamlit as st
+import pandas as pd
 from streamlit_option_menu import option_menu
 
 heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
@@ -79,28 +80,17 @@ if (selected == 'Healthy Heart Prediction'):
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = "The person is not Healthy 🫀 and Has a Heart Disease Try Following The Diet \n"
-          st.write(
-                              
-     '''-----------------------------------------------------------------------------------------------------
-        Time      |         Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |
-        
-        ------------------------------------------------------------------------------------------------------
-        
-        BreakFast | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with | veg paratha
-                  | veg poha   | bread       | 1apple     | sambar       | pongal    | sambar.     | with curd
-                                  
-        ------------------------------------------------------------------------------------------------------
-        
-        Lunch     | 1cup brown | 2multigrain | 1cup brown  | 2multigrain  | 2meethi   |  phulkas   | veg pulao
-                  | rice+dal   | roti        |rice spinach | roti         | multigrain| dal tadka  | with panneer
-                  |            |             |             |              | paratha.  |    raita   | masala 
-        ------------------------------------------------------------------------------------------------------
-        
-        Dinner    |2multigrain |1cup brownric| baked        | 1cup rice  | 1cup rice  | jeera rice | 2 millet
-                  | roti       | with rajma  | vegetables   |tomato rasam| curd       | dal.       | rotis 
-                  |cauliflower |             |platter.      |spinach.    |beetroot.   | gobi sabzi | methi
-        ------------------------------------------------------------------------------------------------------'''
-              
+          heart_diet = pd.DataFrame({
+    'Meal': ['Breakfast', 'Mid-morning snack', 'Lunch', 'Afternoon snack', 'Dinner'],
+    'Monday': ['1 cup oatmeal with fruit and nuts, 1 cup green tea', '1 apple, 10 almonds', 'Grilled chicken breast, steamed veggies, 1 whole grain roll', '1 orange, 1 protein shake', 'Grilled fish, mixed veggies, quinoa'],
+    'Tuesday': ['Greek yogurt with granola and berries, 1 cup of tea', '1 pear, 1 hard-boiled egg', 'Grilled salmon, mixed greens salad, balsamic vinaigrette', '1 cup of green tea, 1 string cheese', 'Grilled chicken, roasted potatoes, mixed veggies'],
+    'Wednesday': ['Egg white omelette with veggies, 1 cup of coffee', '1 banana, 1 hard-boiled egg', 'Grilled shrimp, brown rice, steamed veggies', '1 protein bar, 1 apple', 'Grilled sirloin steak, sweet potato, mixed veggies'],
+    'Thursday': ['Whole grain toast with avocado and smoked salmon, 1 cup of tea', '1 orange, 10 almonds', 'Grilled chicken breast sandwich on whole grain bread, baby carrots', '1 cup of green tea, 1 string cheese', 'Grilled pork tenderloin, roasted potatoes, mixed veggies'],
+    'Friday': ['Egg white scramble with veggies and whole grain toast, 1 cup of coffee', '1 apple, 1 hard-boiled egg', 'Grilled chicken kebab, tabbouleh salad', '1 cup of green tea, 1 protein bar', 'Grilled fish tacos with salsa and avocado, mixed veggies'],
+})
+
+# Display the table in Streamlit
+st.table(heart_diet)
           )
         else:
           heart_diagnosis = 'The person is Healthy 🫀 🥳'
