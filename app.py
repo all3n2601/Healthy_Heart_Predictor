@@ -90,8 +90,7 @@ if (selected == 'Healthy Heart Prediction'):
                       })
 
                       # Display the table in Streamlit
-                      st.table(heart_diet)
-          
+           st.table(heart_diet)
         else:
           heart_diagnosis = 'The person is Healthy 🫀 🥳'
         
