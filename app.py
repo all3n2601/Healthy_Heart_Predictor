@@ -81,7 +81,7 @@ if (selected == 'Healthy Heart Prediction'):
           heart_diagnosis = "The person is not Healthy 🫀 and Has a Heart Disease Try Following The Diet \n"
           st.write(
                               '''-----------------------------------------------------------------------------------------------------
-                         Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |
+                        \t\t Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |
         
         ------------------------------------------------------------------------------------------------------
         
