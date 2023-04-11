@@ -9,9 +9,9 @@ heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
 
 with st.sidebar:
     
-    selected = option_menu('Healthy Heart Prediction System',
+    selected = option_menu('Healthy Heart Prediction and Diet Suggestion',
                           
-                          ['Healthy Heart Prediction'],
+                          ['Healthy Heart Prediction and Diet Suggestion'],
                           icons=['heart'],
                           default_index=0)
     
@@ -24,7 +24,7 @@ with st.sidebar:
 
 
 # Heart Disease Prediction Page
-if (selected == 'Healthy Heart Prediction'):
+if (selected == 'Healthy Heart Prediction and Diet Suggestion'):
     
   
     st.title('Healthy Heart Prediction and Diet Suggestion')
