@@ -86,17 +86,19 @@ if (selected == 'Healthy Heart Prediction'):
         
         ------------------------------------------------------------------------------------------------------
         
-        BreakFast |  1cup mixed   |  2multigrain  |
-                  |   veg poha    |  bread        | 
+        BreakFast | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with |veg paratha
+                  | veg poha  | bread        | 1apple     | sambar       | pongal    | sambar.     | with curd
                                   
         ------------------------------------------------------------------------------------------------------
         
-        Lunch     |
-        
+        Lunch    | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with |veg paratha
+                  | veg poha  | bread        | 1apple     | sambar       | pongal    | sambar.     | with curd
+                                  
         ------------------------------------------------------------------------------------------------------
         
-        Dinner    |
-        
+        Dinner    | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with |veg paratha
+                  | veg poha  | bread        | 1apple     | sambar       | pongal    | sambar.     | with curd
+                                     
         ------------------------------------------------------------------------------------------------------'''
               
           )
