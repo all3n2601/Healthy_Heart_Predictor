@@ -78,7 +78,24 @@ if (selected == 'Healthy Heart Prediction'):
         heart_prediction = heart_disease_model.predict([[age, sex, cp, trestbps, chol, fbs, restecg,thalach,exang,oldpeak,slope,ca,thal]])                         
         
         if (heart_prediction[0] == 1):
-          heart_diagnosis = 'The person is not Healthy 🫀 and Has a Heart Disease🙁'
+          heart_diagnosis = 'The person is not Healthy 🫀 and Has a Heart Disease🙁
+        
+        -----------------------------------------------------------------------------------------------------
+                         Sunday    | Monday  |  Tuesday  |  Wednesday  |  Thursday  |  Friday  |  Saturday  |
+        
+        ------------------------------------------------------------------------------------------------------
+        
+        BreakFast |
+        
+        ------------------------------------------------------------------------------------------------------
+        
+        Lunch     |
+        
+        ------------------------------------------------------------------------------------------------------
+        
+        Dinner    |
+        
+        ------------------------------------------------------------------------------------------------------'
         else:
           heart_diagnosis = 'The person is Healthy 🫀 🥳'
         
