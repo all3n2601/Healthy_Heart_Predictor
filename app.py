@@ -27,7 +27,7 @@ with st.sidebar:
 if (selected == 'Healthy Heart Prediction'):
     
   
-    st.title('Healthy Heart Prediction using ML')
+    st.title('Healthy Heart Prediction and Diet Suggestion')
     
     col1, col2 = st.columns(2)
     
