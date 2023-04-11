@@ -86,19 +86,19 @@ if (selected == 'Healthy Heart Prediction'):
         
         ------------------------------------------------------------------------------------------------------
         
-        BreakFast | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with |veg paratha
-                  | veg poha  | bread        | 1apple     | sambar       | pongal    | sambar.     | with curd
+        BreakFast | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with | veg paratha
+                  | veg poha   | bread       | 1apple     | sambar       | pongal    | sambar.     | with curd
                                   
         ------------------------------------------------------------------------------------------------------
         
-        Lunch    | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with |veg paratha
-                  | veg poha  | bread        | 1apple     | sambar       | pongal    | sambar.     | with curd
-                                  
+        Lunch     | 1cup brown | 2multigrain | 1cup brown  | 2multigrain  | 2meethi   |  phulkas   | veg pulao
+                  | rice+dal   | roti        |rice spinach | roti         | multigrain| dal tadka  | with panneer
+                  |            |             |             |              | paratha.  |    raita   | masala 
         ------------------------------------------------------------------------------------------------------
         
-        Dinner    | 1cup mixed | 2multigrain | 1cup oats  | 2dosas with  | 1coconut  | 3idlis with |veg paratha
-                  | veg poha  | bread        | 1apple     | sambar       | pongal    | sambar.     | with curd
-                                     
+        Dinner    |2multigrain |1cup brownric| baked        | 1cup rice  | 1cup rice  | jeera rice | 2 millet
+                  | roti       | with rajma  | vegetables   |tomato rasam| curd       | dal.       | rotis 
+                  |cauliflower |             |platter.      |spinach.    |beetroot.   | gobi sabzi | methi
         ------------------------------------------------------------------------------------------------------'''
               
           )
